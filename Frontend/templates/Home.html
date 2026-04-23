@@ -1,0 +1,126 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Moderno | Gestión Digital</title>
+    <link rel="stylesheet" href="/static/Css/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">López y Suárez <span>Resto</span></div>
+            <ul class="nav-links">
+                <li><a href="/Home">Inicio</a></li>
+                <li><a href="/Menu">Menú</a></li>
+            </ul>
+            <button class="btn-primary">Hacer Pedido</button>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Sabor Tradicional, <br><span>Experiencia Digital.</span></h1>
+            <p>Disfruta de la mejor comida con un sistema de pedidos rápido y sin filas.</p>
+            <div class="hero-btns">
+                <a href="#menu" class="btn-primary">Ver Carta</a>
+            </div>
+        </div>
+    </section>
+
+<section id="menu" class="menu-section">
+    <h2 class="section-title">Nuestro Menú</h2>
+    
+    <div class="carousel-wrapper">
+        <button class="nav-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+        
+        <div class="menu-container">
+            <div class="menu-grid" id="menuGrid">
+                <div class="menu-item">
+                    <a href="/Menu">
+                        <div class="item-img"><img src="{{ url_for('static', path='/img/Burger6.png') }}" class="imgLogoBurguer"></div>
+                    </a>
+                    <div class="item-info">
+                        <h3>Hamburguesas caseras</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <a href="/Menu">
+                        <div class="item-img"><img src="{{ url_for('static', path='/img/PizzaLogo.png') }}" class="imgLogoBurguer"></div>
+                    </a>
+                    <div class="item-info">
+                        <h3>Pizza</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <a href="/Menu">
+                        <div class="item-img"><img src="{{ url_for('static', path='/img/SushiLogo.png') }}" class="imgLogoBurguer"></div>
+                    </a>
+                    <div class="item-info">
+                        <h3>Sushi </h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <a href="/Menu">
+                        <div class="item-img"><img src="{{ url_for('static', path='/img/TacosLogo.png') }}" class="imgLogoBurguer"></div>
+                    </a>
+                    <div class="item-info">
+                        <h3>Tacos a la mexicana</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <a href="/Menu">
+                        <div class="item-img"><img src="{{ url_for('static', path='/img/LogoPerro.png') }}" class="imgLogoBurguer"></div>
+                    </a>
+                    <div class="item-info">
+                        <h3>Perros calientes</h3>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <a href="/Menu">
+                        <div class="item-img"><img src="{{ url_for('static', path='/img/ArepaLogo.png') }}" class="imgLogoBurguer"></div>
+                    </a>
+                    <div class="item-info">
+                        <h3>Arepa Rellena</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="nav-btn next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+</section>
+<footer class="footer-section">
+    <div class="container footer-content">
+        <div class="footer-info"> 
+            <h3 class="footer-title">Nos preocupamos por ti</h3>
+            <div class="footer-description"> 
+                <p>Somos una empresa que ofrece a los visitantes una muestra de la mejor 
+                gastronomía peruana e internacional, en un ambiente romántico y acogedor.</p>
+                <p>Nuestro espíritu innovador y expresivo se manifiesta en nuestros productos, 
+                pero también en nuestros locales, la música y nuestro servicio.</p>
+                <p>Nuestras <strong>Burgers son 100% artesanales</strong>, hechas con carne Angus certificada, molidas diariamente y nunca congeladas.</p>
+            </div>
+            
+            <div class="footer-social"> 
+                <h4 class="social-title">Síguenos en nuestras redes</h4>
+                <div class="social-icons">
+                    <a href="#" class="social-link"><img src="{{ url_for('static', path='/img/facebook_109862.png') }}" alt="Facebook"></a>
+                    <a href="#" class="social-link"><img src="{{ url_for('static', path='/img/instagam_109863.png') }}" alt="Instagram"></a>
+                    <a href="#" class="social-link"><img src="{{ url_for('static', path='/img/whatsapp_109861.png') }}" alt="WhatsApp"></a>
+                    <a href="#" class="social-link"><img src="{{ url_for('static', path='/img/youtube_109860.png') }}" alt="YouTube"></a>
+                </div>   
+            </div>
+        </div>
+        <div class="footer-image">
+            <img src="{{ url_for('static', path='/img/LogoMujerHamburguesa.png') }}" alt="Logo GN">
+        </div>
+    </div>
+</footer>
+
+    <footer>a
+        <p>&copy; 2026 López y Suárez S.A.S - Software Engineering</p>
+    </footer>
+<script src="/static/Js/Home.js"></script>
+</body>
+</html>

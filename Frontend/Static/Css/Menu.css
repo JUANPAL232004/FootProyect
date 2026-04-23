@@ -1,0 +1,225 @@
+/* Variables de Color y Estilo - Transformado a Amarillo/Dorado */
+:root {
+    --primary-yellow: #ffcc00;     /* Amarillo vibrante */
+    --dark-gold: #b8860b;         /* Dorado oscuro para contraste y hover */
+    --deep-yellow: #e6b800;       /* Tono medio para profundidad */
+    --light-bg: #fffdf2;          /* Fondo crema muy suave para no cansar la vista */
+    --text-main: #2c2c2c;
+    --text-light: #ffffff; 
+    --text-light2: #d1d1d1;
+    --white: #ffffff;
+    --shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--light-bg);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+/* Navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: var(--white);
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--dark-gold);
+}
+
+.logo span {
+    color: var(--deep-yellow);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: var(--text-main);
+    margin: 0 20px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    color: var(--deep-yellow);
+}
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* Gradiente ajustado a tonos dorados/ámbar oscuros */
+    background: linear-gradient(rgba(45, 35, 0, 0.7), rgba(45, 35, 0, 0.7)), 
+                url('https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1200&q=80');
+    background-size: cover;
+    color: var(--white);
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content span {
+    color: var(--primary-yellow);
+}
+
+.hero-btns {
+    margin-top: 10px ;
+}
+
+/* Botones */
+.btn-primary {
+    background: var(--primary-yellow);
+    color: #222; /* Texto oscuro para mejor legibilidad sobre amarillo */
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    background: var(--deep-yellow);
+}
+
+.btn-secondary {
+    border: 2px solid var(--white);
+    color: var(--white);
+    padding: 10px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Menú Grid */
+.menu-categories {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.cat-btn {
+    padding: 10px 20px;
+    border: 2px solid var(--primary-yellow);
+    background: transparent;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+    color: var(--text-main);
+}
+
+.cat-btn.active, .cat-btn:hover {
+    background: var(--primary-yellow);
+    box-shadow: 0 4px 10px rgba(255, 204, 0, 0.3);
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Grid automático responsivo */
+    gap: 30px;
+    width: 100%;
+}
+
+.menu-item {
+    background: var(--white);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.menu-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(184, 134, 11, 0.15);
+}
+
+.item-img img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* La imagen llena el espacio sin deformarse */
+}
+
+.item-info {
+    padding: 20px;
+}
+
+.item-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    color: var(--text-main);
+}
+
+.item-info p {
+    font-size: 0.9rem;
+    color: #666; /* Gris oscuro para lectura clara */
+    margin-bottom: 20px;
+    height: 40px; /* Mantiene uniformidad */
+}
+
+.item-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-size: 1.4rem;
+    color: var(--dark-gold);
+    font-weight: 800;
+}
+
+.add-btn {
+    position: static; /* Cambiado de absolute para mejor control */
+    width: 40px;
+    height: 40px;
+    border-radius: 12px; /* Estilo más moderno que círculo total */
+    background: var(--primary-yellow);
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    background: #1a1a00; /* Negro con matiz café/amarillo muy oscuro */
+    color: var(--white);
+    font-size: 0.9rem;
+}

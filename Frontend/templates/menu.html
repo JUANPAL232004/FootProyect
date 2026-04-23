@@ -1,0 +1,69 @@
+    <html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Moderno | Gestión Digital</title>
+    <link rel="stylesheet" href="/static/Css/Menu.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">López y Suárez <span>Resto</span></div>
+            <ul class="nav-links">
+                <li><a href="/Home">Inicio</a></li>
+                <li><a href="/Menu">Menú</a></li>
+            </ul>
+            <button class="btn-primary">Hacer Pedido</button>
+        </nav>
+    </header>
+    <section id="menu" class="menu-section">
+    <h2 class="section-title">Nuestro Menú Especial</h2>
+
+    <div class="menu-categories">
+        <button class="cat-btn active" data-category="hamburguesas">Hamburguesas</button>
+        <button class="cat-btn" data-category="pizzas">Pizzas</button>
+        <button class="cat-btn" data-category="sushi">Sushi</button>
+        <button class="cat-btn" data-category="tacos">Tacos</button>
+        <button class="cat-btn" data-category="perros calientes">Perros Calientes</button>
+        <button class="cat-btn" data-category="arepas">Arepas</button>
+    </div>
+
+    <div class="menu-grid">
+        <div class="menu-item" data-category="hamburguesas">
+            <div class="item-img">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=500" alt="Burger">
+            </div>
+            <div class="item-info">
+                <h3>Burger Clásica</h3>
+                <p>Carne artesanal, queso cheddar y vegetales frescos.</p>
+                <div class="item-footer">
+                    <span class="price">$25.000</span>
+                    <button class="add-btn">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item" data-category="pizzas">
+            <div class="item-img">
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=500" alt="Pizza">
+            </div>
+            <div class="item-info">
+                <h3>Pizza Pepperoni</h3>
+                <p>Masa madre, mozzarella premium y pepperoni americano.</p>
+                <div class="item-footer">
+                    <span class="price">$32.000</span>
+                    <button class="add-btn">+</button>
+                </div>
+            </div>
+        </div>
+
+        </div>
+</section>
+    <footer>a
+        <p>&copy; 2026 López y Suárez S.A.S - Software Engineering</p>
+    </footer>
+<script src="/static/Js/Menu.js"></script>
+</body>
+</html>
